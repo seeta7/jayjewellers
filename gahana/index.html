@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Jewellers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Jay Jewellers</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color:#555; /* Background color for nav */
+            padding: 10px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+/*
+        .about-section {
+            background-color:white;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-container {
+            display: flex;
+            max-width: 1200px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .overlay {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .overlay h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color:white;
+            margin-bottom: 20px;
+        }
+
+        .overlay p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }*/
+
+        /* Footer Styles */
+        .footer-modern {
+            background-color:#333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom {
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .content-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .overlay h1 {
+                font-size: 28px;
+            }
+
+            .overlay p {
+                font-size: 16px;
+            }
+
+            .image-container {
+                margin-top: 20px;
+            }
+
+            .footer-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .overlay h1 {
+                font-size: 24px;
+            }
+
+            .overlay p {
+                font-size: 14px;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .home-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jay Jewellers</title>
+        <style>
+            /* Reset some defaults */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            /* Navigation styling */
+            nav {
+                background: linear-gradient(to right, #f8c471, #f39c12);
+                padding: 10px 20px;
+                width: 100%;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+    
+            /* Flex container for logo and shop name */
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+    
+            /* Flex container for logo and name */
+            .logo-name {
+                display: flex;
+                align-items: center;
+            }
+    
+            .logo img {
+                width: 80px; /* Adjust logo size */
+                animation: fadeIn 2s ease-in-out; /* Simple fade-in animation */
+            }
+    
+            /* Shop name styling */
+            .shop-title {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-left: 10px;
+                color: #333;
+                animation: fadeIn 2s ease-in-out; /* Simple fade-in animation */
+                animation-delay: 0.5s; /* Delay for the shop name */
+            }
+    
+            /* Navigation links styling */
+            .nav-links {
+                list-style: none;
+                display: flex;
+                gap: 15px;
+            }
+    
+            .nav-links li {
+                display: inline;
+            }
+    
+            .nav-links a {
+                text-decoration: none;
+                font-size: 1rem;
+                color: #333;
+                padding: 5px 10px;
+                transition: color 0.3s ease-in-out;
+            }
+    
+            .nav-links a:hover {
+                color: #d4af37; /* Gold on hover */
+            }
+    
+            /* Keyframes for fade-in animation */
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+    
+            /* Responsive design for mobile */
+            @media (max-width: 768px) {
+                .container {
+                    flex-direction: column; /* Stack items vertically on mobile */
+                    align-items: center;
+                }
+    
+                .nav-links {
+                    flex-direction: column; /* Stack links vertically */
+                    gap: 10px;
+                }
+    
+                .logo img {
+                    width: 60px; /* Smaller logo on mobile */
+                }
+    
+                .shop-title {
+                    font-size: 1.2rem; /* Slightly smaller title on mobile */
+                }
+            }
+        </style>
+    </head>
+    <body>
+        
+    
+        <nav>
+            <div class="container">
+                <div class="logo-name">
+                    <div class="logo">
+                        <img src="logo20.jpg" alt="Jay Jewellers" class="animated-logo">
+                    </div>
+                    <div class="shop-name">
+                        <h1 class="shop-title">Jay Jewellers</h1>
+                    </div>
+                </div>
+    
+                <ul class="nav-links">
+                    <li><a href="#" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#" onclick="showSection('about')">About</a></li>
+                    <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+       
+    
+    </body>
+    </html>
+    <section id="about" class="about-section">
+        <div class="image-container">
+            <img src="new.jpg.jpg" alt="Store Image">
+        </div>
+        <div class="content-container">
+            <div class="text-box">
+                <h1>WHO ARE WE</h1>
+                <p>
+                    With a history of 5 decades, Jay Jewellers has become the benchmark for trust and designs of jewellery in Nepal. In just 50 years, Jay Jewellers has become synonymous with quality, service, and purity. We source the highest quality diamonds, gold, and silver and pair them with our in-house designers and craftsmen to create the most beautiful and unique jewellery.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+    <div id="contact" class="contact-section content-section hidden">
+        <h1>Contact Us</h1>
+        <div class="contact-details">
+            <div class="contact-info">
+                <p><span class="contact-icon">📞</span> Phone: <a href="tel:+9779801921166">9801921166, 9801921112, 9801921113 </p>
+                <p><span class="contact-icon">📍</span> Visit: Airport Road,Kumari Bank Building,Dhulabari,Jhapa</p>
+                <p><span class="contact-icon">✉️</span> Email: <a href="mailto:acesshraff@gmail.com.com">acesshraff@gmail.com</a></p>
+                <a href="https://wa.me/your-9801921112" class="contact-icon" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                </a>
+                <a href="https://www.facebook.com/jay.jewellers/" class="contact-icon" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook" style="color: #3b5998;"></i>
+                </a>
+                <a href="acesshraff@gmail.com.com" class="contact-icon" target="_blank" title="Email">
+                    <i class="fas fa-envelope" style="color: #EA4335;"></i>
+                </a>
+                <a href="https://instagram.com/your-profile" class="contact-icon" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram" style="color: #C13584;"></i>
+                </a>
+                <a href="phone:9801921112" class="contact-icon" target="_blank" title="Phone">
+                    <i class="fas fa-phone" style="color: #25D366;"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <style>/* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .contact-section {
+            background-color: #f5f5f5;
+            padding: 50px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .contact-section h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+        
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        
+        /* Contact Info Styling */
+        .contact-info {
+            text-align: left;
+        }
+        
+        .contact-info p {
+            font-size: 18px;
+            color: #555;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info p:hover {
+            color: #000;
+            transform: translateX(5px);
+        }
+        
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Icons Styling */
+        .contact-icon {
+            font-size: 24px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-section h1 {
+                font-size: 28px;
+            }
+        
+            .contact-info {
+                text-align: center;
+            }
+        }
+        </style>
+    
+
+    <!-- Footer Section -->
+    <footer class="footer-modern hidden" id="footer">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h2 class="footer-logo">Jay Jewellers</h2>
+                <p>Where timeless elegance meets exceptional craftsmanship.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: acesshraff@gmail.com.com</p>
+                <p>Phone: 023-564431,9801921112, 9801921166</p>
+                <p>Visit: Airpot Road,Kumari Bank Building,Dhulabari,jhapa</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Promise</h3>
+                <p>Exceptional service, personalized attention, and designs that inspire.</p>
+                <p><em>“Crafting memories, one jewel at a time.”</em></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Jay Jewellers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.content-section, .about-section');
+            sections.forEach(section => section.classList.add('hidden'));
+
+            // Hide the footer by default
+            document.getElementById('footer').classList.add('hidden');
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.classList.remove('hidden');
+            }
+
+            // Show the footer if the contact section is selected
+            if (sectionId === 'contact') {
+                document.getElementById('footer').classList.remove('hidden');
+            }
+        }
+
+        // Show the home section by default
+        showSection('home');
+    </script>
+
+</body>
+</html>
+
+    <hr>
+
+    <!-- Celebration Banner Section -->
+    <section class="celebration-header">
+        <div class="celebration-background">
+            <img src="cover.jpg" alt="Celebration" class="celebration-hero-image">
+            <div class="confetti"></div>
+        </div>
+        <div class="celebration-content">
+            <h1 class="celebration-title">Celebrating 50 Years of Excellence!</h1>
+            <p class="celebration-message">Join us as we commemorate a journey filled with elegance, craftsmanship, and timeless beauty.</p>
+        
+        </div>
+        <div class="celebration-emojis">
+            <span class="emoji left-emoji">🎉</span>
+            <span class="emoji right-emoji">🎊</span>
+            <span class="emoji right-emoji">🥂</span>
+            <span class="emoji left-emoji">🎊</span>
+        </div>
+    </section>
+
+   
+    <hr class="styled-hr">
+    
+    
+   
+
+
+ <!-- New Collection Section -->
+<!-- Our Collection Section -->
+<!-- Our Collection Section -->
+<section class="product-gallery">
+    <h2>Our product-description</h2>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="ranihar.jpg" alt="Product 1">
+            <h1>Nacklace</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="ge4.jpg.png" alt="Product 1">
+            <h1>sparking golden earrings</h1>
+        </div>
+       
+        <div class="gallery-item">
+            <img src="a2.png" alt="Product 3">
+            <h1>sparking ring.</h1>
+        </div>
+<hr class="styled-hr"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Jewellers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9; /* Light background for better visibility */
+        }
+        .image-section {
+            position: relative; /* Allows absolute positioning of overlay */
+            margin: 20px;
+            width: 90%; /* Responsive width */
+            max-width: 400px; /* Maximum width */
+            border-radius: 10px;
+            cursor: pointer;
+            overflow: hidden; /* Ensures content fits within the bounds */
+        }
+        .image-section img {
+            width: 100%; /* Full width for background effect */
+            height: auto; /* Maintain aspect ratio */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+        .image-section:hover img {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+            color: white;
+            display: flex;
+            flex-direction: column; /* Stack overlay text vertically */
+            justify-content: center;
+            align-items: center;
+            opacity: 1; /* Always visible */
+            transition: opacity 0.5s ease; /* Smooth transition for opacity */
+            border-radius: 10px; /* Match image border radius */
+        }
+        .overlay-text {
+            font-size: 22px; /* Font size for overlay */
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9); /* Enhance text visibility */
+            padding: 10px; /* Add some padding */
+            text-align: center; /* Center align text */
+        }
+        .additional-text {
+            font-size: 16px; /* Font size for additional text */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Text shadow for visibility */
+            margin-top: 5px; /* Space between the main and additional text */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Image Section -->
+    <div class="image-section" onclick="window.location.href='others1.html';">
+        <img src="dc.jpg.png" alt="Main Image" id="mainImage">
+        <div class="overlay">
+            <div class="overlay-text">Diamond Collections</div>
+            <div class="additional-text"></div> <!-- Additional text on the image -->
+        </div>
+    </div>
+
+    <script>
+        // No need for zoom toggle function; click event is handled by the div itself.
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Jewellers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9; /* Light background for better visibility */
+        }
+        .image-section {
+            position: relative; /* Allows absolute positioning of overlay */
+            margin: 20px;
+            width: 90%; /* Responsive width */
+            max-width: 400px; /* Maximum width */
+            border-radius: 10px;
+            cursor: pointer;
+            overflow: hidden; /* Ensures content fits within the bounds */
+        }
+        .image-section img {
+            width: 100%; /* Full width for background effect */
+            height: auto; /* Maintain aspect ratio */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+        .image-section:hover img {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+            color: white;
+            display: flex;
+            flex-direction: column; /* Stack overlay text vertically */
+            justify-content: center;
+            align-items: center;
+            opacity: 1; /* Always visible */
+            transition: opacity 0.5s ease; /* Smooth transition for opacity */
+            border-radius: 10px; /* Match image border radius */
+        }
+        .overlay-text {
+            font-size: 22px; /* Font size for overlay */
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9); /* Enhance text visibility */
+            padding: 10px; /* Add some padding */
+            text-align: center; /* Center align text */
+        }
+        .additional-text {
+            font-size: 16px; /* Font size for additional text */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Text shadow for visibility */
+            margin-top: 5px; /* Space between the main and additional text */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Image Section -->
+    <div class="image-section" onclick="window.location.href='others2.html';">
+        <img src="gn4.jpg.png" alt="Main Image" id="mainImage">
+        <div class="overlay">
+            <div class="overlay-text">Gold Collections</div>
+            <div class="additional-text"></div> <!-- Additional text on the image -->
+        </div>
+    </div>
+
+    <script>
+        // No need for zoom toggle function; click event is handled by the div itself.
+    </script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Jewellers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9; /* Light background for better visibility */
+        }
+        .image-section {
+            position: relative; /* Allows absolute positioning of overlay */
+            margin: 20px;
+            width: 90%; /* Responsive width */
+            max-width: 400px; /* Maximum width */
+            border-radius: 10px;
+            cursor: pointer;
+            overflow: hidden; /* Ensures content fits within the bounds */
+        }
+        .image-section img {
+            width: 100%; /* Full width for background effect */
+            height: auto; /* Maintain aspect ratio */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+        .image-section:hover img {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+            color: white;
+            display: flex;
+            flex-direction: column; /* Stack overlay text vertically */
+            justify-content: center;
+            align-items: center;
+            opacity: 1; /* Always visible */
+            transition: opacity 0.5s ease; /* Smooth transition for opacity */
+            border-radius: 10px; /* Match image border radius */
+        }
+        .overlay-text {
+            font-size: 22px; /* Font size for overlay */
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9); /* Enhance text visibility */
+            padding: 10px; /* Add some padding */
+            text-align: center; /* Center align text */
+        }
+        .additional-text {
+            font-size: 16px; /* Font size for additional text */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Text shadow for visibility */
+            margin-top: 5px; /* Space between the main and additional text */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Image Section -->
+    <div class="image-section" onclick="window.location.href='others3.html';">
+        <img src="sn2.jpg.png" alt="Main Image" id="mainImage">
+        <div class="overlay">
+            <div class="overlay-text">silver Collections</div>
+            <div class="additional-text"></div> <!-- Additional text on the image -->
+        </div>
+    </div>
+
+    <script>
+        // No need for zoom toggle function; click event is handled by the div itself.
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- Featured Product Section -->
+<section class="featured-product">
+    <div class="product-image" id="product-image">
+        <img src="braaclet.jpg" alt="Gold Woven Chain Bracelet" class="zoom-image">
+    </div>
+    <div class="product-details">
+        <h3 class="product-title">Gold Woven Chain Bracelet </h3>
+        <p class="product-description">This bracelet features a bold 18k gold finish and a woven design that offers modern style with an edge.</p>
+    </div>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Jewellers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9; /* Light background for better visibility */
+        }
+        .image-section {
+            position: relative; /* Allows absolute positioning of overlay */
+            margin: 20px;
+            width: 90%; /* Responsive width */
+            max-width: 400px; /* Maximum width */
+            border-radius: 10px;
+            cursor: pointer;
+            overflow: hidden; /* Ensures content fits within the bounds */
+        }
+        .image-section img {
+            width: 100%; /* Full width for background effect */
+            height: auto; /* Maintain aspect ratio */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+        .image-section:hover img {
+            transform: scale(1.1); /* Zoom effect on hover */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+            color: white;
+            display: flex;
+            flex-direction: column; /* Stack overlay text vertically */
+            justify-content: center;
+            align-items: center;
+            opacity: 1; /* Always visible */
+            transition: opacity 0.5s ease; /* Smooth transition for opacity */
+            border-radius: 10px; /* Match image border radius */
+        }
+        .overlay-text {
+            font-size: 22px; /* Font size for overlay */
+            font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9); /* Enhance text visibility */
+            padding: 10px; /* Add some padding */
+            text-align: center; /* Center align text */
+        }
+        .additional-text {
+            font-size: 16px; /* Font size for additional text */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Text shadow for visibility */
+            margin-top: 5px; /* Space between the main and additional text */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Image Section -->
+    <div class="image-section" onclick="window.location.href='others4.html';">
+        <img src="tradition.jpg" alt="Main Image" id="mainImage">
+        <div class="overlay">
+            <div class="overlay-text">Traditional Collections</div>
+            <div class="additional-text"></div> <!-- Additional text on the image -->
+        </div>
+    </div>
+
+    <script>
+        // No need for zoom toggle function; click event is handled by the div itself.
+    </script>
+
+
+
+    
+
+</body>
+<hr class="styled-hr">
+    
+
+<section class="product-gallery">
+    <h2>Our product-description</h2>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="col7.jpg" alt="Product 1">
+            <h1>Handcrafted beautiful jewelry.</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="image12.png" alt="Product 2">
+            <h1>High-quality diamonds and gemstones.</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="a2.png" alt="Product 3">
+            <h1>Luxury, unique, and exclusive design.</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="a3.png" alt="Product 4">
+            <h1>Elegant jewelry for special occasions.</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="a1.png" alt="Product 5">
+            <h1>Perfectly crafted for daily wear.</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="ranihar.jpg" alt="Product 6">
+            <h1>Exquisite designs to match your style.</h1>
+        </div>
+    </div>
+</section>
+
+
+<section id="about" class="about-section">
+    <div class="image-container">
+        <img src="new.jpg.jpg" alt="Store Image">
+    </div>
+    <div class="content-container">
+        <div class="text-box">
+            <h1>WHO ARE WE</h1>
+            <p>
+                With a history of 5 decades, Jay Jewellers has become the benchmark for trust and designs of jewellery in Nepal. In just 50 years, Jay Jewellers has become synonymous with quality, service, and purity. We source the highest quality diamonds, gold, and silver and pair them with our in-house designers and craftsmen to create the most beautiful and unique jewellery.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <div class="contact-nav">
+        <a href="https://wa.me/your-9801921112" class="contact-icon" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+        </a>
+        <a href="https://www.facebook.com/jay.jewellers/" class="contact-icon" target="_blank" title="Facebook">
+            <i class="fab fa-facebook" style="color: #3b5998;"></i>
+        </a>
+        <a href="acesshrff@gmail.comcom" class="contact-icon" target="_blank" title="Email">
+            <i class="fas fa-envelope" style="color: #EA4335;"></i>
+        </a>
+        <a href="https://instagram.com/your-profile" class="contact-icon" target="_blank" title="Instagram">
+            <i class="fab fa-instagram" style="color: #C13584;"></i>
+        </a>
+        <a href="phone:9801921112" class="contact-icon" target="_blank" title="Phone">
+            <i class="fas fa-phone" style="color: #25D366;"></i>
+        </a>
+    </div>
+    <hr class="styled-hr">
+
+    <footer class="footer-modern">
+        <div id="contact" class="content-section hidden"></div>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h2 class="footer-logo">Jay Jewelers</h2>
+                <p>Where timeless elegance meets exceptional craftsmanship.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email:acesshraff@gmail.com</p>
+                <p>Phone: 023-564431  ,9801921112,  9801921166</p>
+                <p>Visit:Airport road , kumari bank  building ,dhulabari, jhapa </p>
+                <a href="https://wa.me/your-9801921112" class="contact-icon" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                </a>
+                <a href="https://www.facebook.com/jay.jewellers/" class="contact-icon" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook" style="color: #3b5998;"></i>
+                </a>
+                <a href="acesshraff@gmail.com" class="contact-icon" target="_blank" title="Email">
+                    <i class="fas fa-envelope" style="color: #EA4335;"></i>
+                </a>
+                <a href="https://instagram.com/your-profile" class="contact-icon" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram" style="color: #C13584;"></i>
+                </a>
+                <a href="phone:9801921112" class="contact-icon" target="_blank" title="Phone">
+                    <i class="fas fa-phone" style="color: #25D366;"></i>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Our Promise</h3>
+                <p>Exceptional service, personalized attention, and designs that inspire.</p>
+                <p><em>“Crafting memories, one jewel at a time.”</em></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+
+            <p>&copy; 2024 Jay Jewelers. All rights reserved.</p>
+        </div>
+    </footer>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Jewellers - 50th Anniversary</title>
+    <style>
+        /* Styles for the popup container */
+        .popup-container {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Styles for the popup box */
+        .popup-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeInPopup 1s ease-in-out;
+        }
+
+        /* Styles for the close button */
+        .popup-close {
+            background-color: #d4af37; /* Gold color */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* Keyframes for fade-in animation */
+        @keyframes fadeInPopup {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Popup container -->
+    <div id="popup" class="popup-container">
+        <div class="popup-box">
+            <h2>Celebrating 50 Years!</h2>
+            <p>Jay Jewellers is proud to celebrate 50 years of excellence in craftsmanship and service.</p>
+            <button class="popup-close" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to show the popup
+        function showPopup() {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'flex'; // Show the popup
+
+            // Automatically hide the popup after 5 seconds
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 5000); // 5000 milliseconds = 5 seconds
+        }
+
+        // Function to close the popup manually
+        function closePopup() {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'none'; // Hide the popup
+        }
+
+        // Show the popup when the page loads
+        window.onload = showPopup;
+    </script>
+    
+
+</body>
+</html>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Jewellers - 50th Anniversary</title>
+    <style>
+        /* Styles for the popup container */
+        .popup-container {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Styles for the popup box with transparent background */
+        .popup-box {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeInPopup 1s ease-in-out;
+        }
+
+        /* Styles for the close button */
+        .popup-close {
+            background-color: #d4af37; /* Gold color */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* Keyframes for fade-in animation */
+        @keyframes fadeInPopup {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Popup container -->
+    <div id="popup" class="popup-container">
+        <div class="popup-box">
+            <h2>Celebrating 50 Years!</h2>
+            <p>Jay Jewellers is proud to celebrate 50 years of excellence in craftsmanship and service.</p>
+            <button class="popup-close" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to show the popup
+        function showPopup() {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'flex'; // Show the popup
+
+            // Automatically hide the popup after 5 seconds
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 5000); // 5000 milliseconds = 5 seconds
+        }
+
+        // Function to close the popup manually
+        function closePopup() {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'none'; // Hide the popup
+        }
+
+        // Show the popup when the page loads
+        window.onload = showPopup;
+    </script>
+    
+
+</body>
+</html>

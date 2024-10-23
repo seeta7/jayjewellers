@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Jewellers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset some defaults */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation styling */
+        nav {
+            background: linear-gradient(to right, #f8c471, #f39c12);
+            padding: 10px 20px;
+            width: 100%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Flex container for logo and shop name */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Flex container for logo and name */
+        .logo-name {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 80px; /* Adjust logo size */
+            animation: fadeIn 2s ease-in-out; /* Simple fade-in animation */
+        }
+
+        /* Shop name styling */
+        .shop-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-left: 10px;
+            color: #333;
+            animation: fadeIn 2s ease-in-out; /* Simple fade-in animation */
+            animation-delay: 0.5s; /* Delay for the shop name */
+        }
+
+        /* Navigation links styling */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #333;
+            padding: 5px 10px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            color: #d4af37; /* Gold on hover */
+        }
+
+        /* Keyframes for fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive design for mobile */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack items vertically on mobile */
+                align-items: center;
+            }
+
+            .nav-links {
+                flex-direction: column; /* Stack links vertically */
+                gap: 10px;
+            }
+
+            .logo img {
+                width: 60px; /* Smaller logo on mobile */
+            }
+
+            .shop-title {
+                font-size: 1.2rem; /* Slightly smaller title on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <!-- Logo and Shop Name -->
+            <div class="logo-name">
+                <div class="logo">
+                    <img src="logo20.jpg" alt="Jay Jewellers" class="animated-logo">
+                </div>
+                <div class="shop-name">
+                    <h1 class="shop-title">Jay Jewellers</h1>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html" onclick="showSection('home')">Home</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+    
+
+    <!-- JavaScript for Smooth Section Navigation -->
+    <script>
+        function showSection(section) {
+            document.getElementById(section).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script><section class="gallery"><section class="product-gallery">
+    <h2>Traditional ornaments</h2>
+    <div class="gallery-container">
+        <div class="gallery-item">
+
+           
+            <img src="chandrama.jpg" alt="Product 1">
+            <h1>chandrama</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="nepasika.jpg" alt="Product 2">
+            <h1>nepasika</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="bulaki.jpg" alt="Product 3">
+            <h1>bulaki</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="kada.jpg" alt="Product 3">
+            <h1>kada</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="dhungri.jpg" alt="Product 3">
+            <h1> dhungri</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="sirbandi.jpg" alt="Product 3">
+            <h1> sirbandi</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="tilhari.jpg" alt="Product 3">
+            <h1> tilhari</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="naugedi.jpg" alt="Product 3">
+            <h1> naugedi</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="kantha.jpg" alt="Product 3">
+            <h1> kantha</h1>
+        </div>
+        <div class="gallery-item">
+            <img src="mangalsutra.jpg" alt="Product 3">
+            <h1> mangalsutra</h1>
+        </div>
